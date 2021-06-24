@@ -84,6 +84,9 @@ document.getElementsByTagName("input")[0].onkeydown = e => {
     case "node kirillsaint":
       txt = "node kirillsaint\nHello, world!"
       break;
+    case "уволить владимира беброва":
+      txt = "уволить владимира беброва\nуволен..."
+      break;
     case null:
       txt = ""
       break;
