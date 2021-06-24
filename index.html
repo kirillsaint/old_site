@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>kirillsaint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+    <script src="typed.js%402.0.9"></script>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      @import url("css/css2.css");
+    </style>
+    <!-- import the webpage's javascript file -->
+    <script src="js/script.js" defer></script>
+    <script src="typed.js%402.0.11"></script>
+  </head>
+  <body>
+    <div class="center">
+      <div>
+        <div style="display: flex;">
+          <span id="text_nickname"></span>
+        </div>
+        <div class="text-editor-wrap">
+          <div class="title-bar">
+            <span class="title">terminal — <span id="terminal-width">420</span><span>x</span><span id="terminal-height">300</span></span>
+          </div>
+          <div id="inner" style="display: flex; flex-direction: column" class="text-body">
+            <div id="out" style="display: flex; flex-direction: column">
+              <a></a>
+              <span>$ node kirillsaint</span>
+              <span> Hello, world!</span>
+            </div>
+            <div id="bash">
+              <span>$ </span>
+              <input id="inputbash" , style="outline:none;background:none;color:white;border-style:none;font-size:1em;width:93%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="links">
+      <a href="https://vk.com/kirillsaint"><i class="fab fa-vk fa-3x links"></i></a>
+      <a href="https://t.me/kirillsaint"><i class="fab fa-telegram-plane fa-3x links"></i></a>
+    </div>
+    <script>
+      
+      var typed = new Typed("#text_nickname", {
+        strings: ["kirill", "saint"],
+        smartBackspace: true,
+        backDelay: 30,
+        loop: true,
+        backSpeed: 100,
+        typeSpeed: 200
+      });
+    </script>
+  </body>
+</html>
