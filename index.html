@@ -1,78 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>kirillsaint</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/title.js"></script>
-    <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
-    <script src="typed.js%402.0.9"></script>
-    <!-- import the webpage's stylesheet -->
+    <title>kirillsaint</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-      @import url("css/css2.css");
-    </style>
-    <!-- import the webpage's javascript file -->
-    <script src="js/script.js" defer></script>
-    <script src="typed.js%402.0.11"></script>
-  </head>
-  <body>
-    <div class="center">
-      <div>
-        <div style="display: flex;">
-          <span id="text_nickname"></span>
-        </div>
-        <div class="text-editor-wrap">
-          <div class="title-bar">
-            <span class="title">terminal — <span id="terminal-width">420</span><span>x</span><span id="terminal-height">300</span></span>
-          </div>
-          <div id="inner" style="display: flex; flex-direction: column" class="text-body">
-            <div id="out" style="display: flex; flex-direction: column">
-              <a></a>
-              <span>$ node kirillsaint</span>
-              <span> Hello, world!</span>
-            </div>
-            <div id="bash">
-              <span>$ </span>
-              <input id="inputbash" , style="outline:none;background:none;color:white;border-style:none;font-size:1em;width:93%;">
-            </div>
-          </div>
-        </div>
-      </div>
+    <link rel="stylesheet" href="css/fork-awesome.min.css">
+        
+</head>
+<body>
+    <img class="ava" src="images/20210705_113033.jpg" href="https://t.me/kirillsaint_info">
+<div class="box">
+
+    <h2 id="name" class="title">kirillsaint</h2>
+
+    <div class="btns">
+        <button class="btn glow" onclick="window.location.href='bots'">Телеграм боты</button>
+    </div>
+    <div class="btns">
+        <button class="btn glow" onclick="window.location.href='https://t.me/kirillsaint_info'">Обо мне</button>
+        <button class="btn glow" onclick="window.location.href='https://t.me/kirillsaint'">Блог</button>
+    </div>
+    <div class="btns">
+        <button class="btn glow" onclick="window.location.href='https://t.me/joinchat/MnVek7pJ-c1jZTYy'">Чат в тг</button>
+    </div>
+        <div class="btns">
+        <button class="btn glow" onclick="window.location.href='pay'">D</button>
+        <button class="btn glow" onclick="window.location.href='pay'">O</button>
+        <button class="btn glow" onclick="window.location.href='pay'">N</button>
+        <button class="btn glow" onclick="window.location.href='pay'">A</button>
+        <button class="btn glow" onclick="window.location.href='pay'">T</button>
+        <button class="btn glow" onclick="window.location.href='pay'">E</button>
+    </div>
+    </div>
+     
+    <div class="box"><h5 class="title">Контакты</h5><div class="btns">
+        <button class="btn glow" onclick="window.location.href='https://t.me/saintfukk2'"><i class="fa fa-telegram fa-3x"></i></button>
+        <button class="btn glow" onclick="window.location.href='https://vk.com/kirillsaint'"><i class="fa fa-vk fa-3x"></i></button>
+        <button class="btn glow" onclick="window.location.href='https://GitHub.com/kirillsaint'"><i class="fa fa-github fa-3x"></i></button>
+        <button class="btn glow" onclick="window.location.href='https://twitter.com/kirillsaint2'"><i class="fa fa-twitter fa-3x"></i></button>
     </div>
 
-    <div id="links">
-      <a href="https://vk.com/kirillsaint"><i class="fab fa-vk fa-3x links"></i></a>
-      <a href="https://t.me/kirillsaint"><i class="fab fa-telegram-plane fa-3x links"></i></a>
-      <a href="https://twitter.com/kirillsaint2"><i class="fab fa-twitter fa-3x links"></i></a>
-    </div>
-    	<script>
-		window.onload = function () {
-			document.body.classList.add('loaded');
-		}
-	</script>
-	<script>
-		window.onload = function () {
-		document.body.classList.add('loaded_hiding');
-		window.setTimeout(function () {
-			document.body.classList.add('loaded');
-			document.body.classList.remove('loaded_hiding');
-		}, 500);
-		}
-	</script>
-	<script> document.oncontextmenu = cmenu; function cmenu() { return false; } </script>
-    <script>
-      
-      var typed = new Typed("#text_nickname", {
-        strings: ["kirill", "saint"],
-        smartBackspace: true,
-        backDelay: 30,
-        loop: true,
-        backSpeed: 100,
-        typeSpeed: 200
-      });
-    </script>
-  </body>
+</div>
+</body>
+
 </html>
