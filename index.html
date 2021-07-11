@@ -9,29 +9,29 @@
         
 </head>
 <body>
+<style>
+  #info {
+    display: none
+  }
+</style>
     <img class="ava" src="images/20210705_113033.jpg" href="https://t.me/kirillsaint_info">
 <div class="box">
 
     <h2 id="name" class="title">kirillsaint</h2>
+    <h4 id="info" class="title">Меня зовут Кирилл, живу в России.<br><br>
+Увлекаюсь веб-разработкой.<br>
+Больше всего люблю разрабатывать телеграм ботов и сайты.<br><br>
+Пишу на Python и Node.js, в качестве бд использую MySQL и SQLite3.<br><button class="btn glow" onclick="noinfo()">Закрыть</button><br></h4>
 
     <div class="btns">
         <button class="btn glow" onclick="window.location.href='bots'">Телеграм боты</button>
     </div>
     <div class="btns">
-        <button class="btn glow" onclick="window.location.href='https://t.me/kirillsaint_info'">Обо мне</button>
+        <button class="btn glow" onclick="info()">Обо мне</button>
         <button class="btn glow" onclick="window.location.href='https://t.me/kirillsaint'">Блог</button>
     </div>
-    <div class="btns">
-        <button class="btn glow" onclick="window.location.href='https://t.me/joinchat/MnVek7pJ-c1jZTYy'">Чат в тг</button>
-    </div>
         <div class="btns">
-        <button class="btn glow" onclick="window.location.href='pay'">D</button>
-        <button class="btn glow" onclick="window.location.href='pay'">O</button>
-        <button class="btn glow" onclick="window.location.href='pay'">N</button>
-        <button class="btn glow" onclick="window.location.href='pay'">A</button>
-        <button class="btn glow" onclick="window.location.href='pay'">T</button>
-        <button class="btn glow" onclick="window.location.href='pay'">E</button>
-    </div>
+        <button class="btn glow" onclick="window.location.href='pay'">DONATE</button>
     </div>
      
     <div class="box"><h5 class="title">Контакты</h5><div class="btns">
@@ -42,6 +42,14 @@
     </div>
 
 </div>
+<script>
+function info() {
+  document.getElementById("info").style.display = "block";
+}
+function noinfo() {
+  document.getElementById("info").style.display = "none";
+}
+</script>
 </body>
 
 </html>
