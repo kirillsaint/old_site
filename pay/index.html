@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Donate to kirillsaint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <meta property="og:description" content="(Donations Alerts | YooMoney)">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #111;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .buttons {
+            user-select: none;
+        }
+        .center {
+            position: absolute;
+            top: 40%;
+        }
+        .btn {
+            margin: 2px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 55px;
+            background: transparent;
+            font-size: 0.9em;
+            width: 90px; 
+            color: #fff;
+            outline: 0;
+            border: 2px solid #2d2d2d;
+            transition: all 0.3s ease;
+        }
+        .thanks {
+            color: whitesmoke;
+            padding-top: 10vh;
+            text-align: center;
+            font-weight: 500;
+            font-size: larger;
+            user-select: none;
+        }
+        .glow-s:hover {
+            border: 2px solid #00c853;
+            box-shadow: 0 0 20px #00c853;
+        }
+        
+        .glow-q:hover {
+            border: 2px solid #FB8C00;
+            box-shadow: 0 0 20px #FB8C00;
+        }
+        .glow-y:hover {
+            border: 2px solid #8B3FDF;
+            box-shadow: 0 0 20px #8B3FDF;
+        }
+        .glow-t:hover {
+            border: 2px solid yellow;
+            box-shadow: 0 0 20px yellow;
+        }
+        #yoomoney {
+          display: none;
+        }
+        #tinkoff {
+          display: none;
+        }
+    </style>
+</head>
+    <body>
+        <div class="center">
+            <div class="buttons">
+                <button id="da" class="btn glow-q" onclick="window.location.href='https://www.donationalerts.com/r/kirillsaint'">Donations Alerts</button>
+                <button id="Y" class="btn glow-y" onclick = "yoomoney()">YooMoney</button>
+            </div>
+            <div class="thanks" id="yoomoney">Номер карты - 4048415026283966</div>
+            <div class="thanks" id="tinkoff">Номер карты - sex</div>
+        </div>
+<script>
+  function yoomoney() {
+  document.getElementById("yoomoney").style.display = "block";
+  document.getElementById("tinkoff").style.display = "none";
+}
+function tinkoff() {
+  document.getElementById("yoomoney").style.display = "none";
+  document.getElementById("tinkoff").style.display = "block";
+}
+</script>
+    </body>
+</html>
