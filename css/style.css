@@ -49,12 +49,12 @@ body {
 }
 
 .btn:hover {
-    border: 2px solid #FF1D00;
+    border: 2px solid green;
     border-radius: 30px;
 }
 
 .glow:hover {
-    box-shadow: 0 0 20px #FF1D00;
+    box-shadow: 0 0 20px green;
 }
 
 .ava {
@@ -64,7 +64,7 @@ body {
     width: 40%;
     max-width: 160px;
     border-radius: 50%;
-    border: 1px solid #2d2d2d;
-    box-shadow: 0 0 20px #FF1D00;
+    border: 1px solid green;
+    box-shadow: 0 0 20px green;
 }
 
