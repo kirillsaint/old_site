@@ -40,7 +40,7 @@ body {
 }
 
 .name:hover {
-    color: seagreen;
+    color: #FFF;
 }
 
 
@@ -53,7 +53,7 @@ body {
 }
 .btn {
     padding: 12px 6px;
-    border: 2px solid green;
+    border: 2px solid #333;
     border-radius: 10px;
     background: transparent;
     color: #fff;
