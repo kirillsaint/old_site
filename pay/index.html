@@ -1,0 +1,595 @@
+<html>
+
+	<head>		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>kirillsaint? yes > donate</title>
+
+        <meta property="og:title" content="kirillsaint">
+
+        <meta property="og:locale" content="en_EU">
+
+        <meta property="og:description" content="kirillsaint is dodik ebaniy">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+
+        <link rel="stylesheet" href="https://kirillsaint.xyz/css/style.css">
+
+        <meta name="theme-color" content="#C21CC7">
+
+        <style>
+
+            :root {
+
+                --text-color: #000000;
+
+                --back-color: #fff3;
+
+                --over-color: #fefefe;
+
+                --border: none;
+
+                --back: url('https://kirillsaint.xyz/images/c155175.jpg');               
+
+            }
+
+           
+
+            body {
+
+                width: 100%;
+
+                min-height: 100%;
+
+                margin: 0;
+
+				background: var(--back) center;
+
+				backdrop-filter: blur(30px);
+
+                background-size: cover;
+
+                display: flex;
+
+                font-family: 'Product Sans';
+
+            }
+
+            .center {
+
+				justify-content: center;
+
+				align-items: center;
+
+				flex-direction: column;
+
+            }
+
+            .info {
+
+                min-width: 300px;
+
+                width: 300px;
+
+                display: flex;
+
+                background: var(--back-color);
+
+                padding: 35px;
+
+                color: var(--text-color);
+
+				border-radius: 16px; 
+
+				-webkit-border-radius: 16px;
+
+				-moz-border-radius: 16px;
+
+                -khtml-border-radius: 16px;
+
+                backdrop-filter: blur(2px);
+
+                -webkit-backdrop-filter: blur(2px);
+
+            }
+
+			.buttons {
+
+				min-width: 300px;
+
+				width: 300px;
+
+				display: flex;
+
+				padding: 0px;
+
+				border-radius: 10px; 
+
+				-webkit-border-radius: 8px;
+
+				-moz-border-radius: 8px;
+
+				-khtml-border-radius: 8px;
+
+			}
+
+			a {
+
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+				-moz-tap-highlight-color: rgba(0,0,0,0);
+
+				padding: 8px 20px; 
+
+				margin: 4px;
+
+				background: var(--back-color);
+
+				color: #fff;
+
+				cursor: pointer;
+
+				border-radius: 8px; 
+
+				-webkit-border-radius: 8px;
+
+				-moz-border-radius: 8px;
+
+				-khtml-border-radius: 8px;
+
+				width: 256px;
+
+				text-align: center;
+
+				text-decoration: none;
+
+				transition: .2s;
+
+                border: var(--border);
+
+            }
+
+            
+
+            .avatar-container {
+
+                margin: 0 0.4em 0 0;
+
+                display: inline-flex;
+
+                justify-content: center;
+
+                align-items: flex-end
+
+            }
+
+            .avatar {
+
+                width: 10em;
+
+                height: 10em;
+
+                border-radius: 5.6em;
+
+            }
+
+            .p {
+
+                position: relative;
+
+                display: inline-flex;
+
+                padding: 0.3em;
+
+            }
+
+			
+
+			a:hover,
+
+            button:hover {
+
+				background: #fff6;
+
+			}
+
+            button:active, button:focus {
+
+  				outline: none;
+
+			}
+
+			button::-moz-focus-inner {
+
+  				border: 0;
+
+			}
+
+			button::-webkit-focus-inner {
+
+				border: 0;
+
+			}
+
+			
+
+			hr {
+
+                border: .5px #fff3 solid;
+
+            }
+
+            
+
+            h3 {
+
+                font-style: normal;
+
+                font-weight: inherit;
+
+                transition: .2ms;
+
+                -webkit-transition: .2ms;
+
+                -moz-transition: .2ms;
+
+            }
+
+            h2 {
+
+                font-size: larger;
+
+                transition: .2ms;
+
+                -webkit-transition: .2ms;
+
+                -moz-transition: .2ms;
+
+            }
+
+            #gitlink,
+
+            #donate {
+
+			    position: fixed;
+
+			    top: 0;
+
+			    left: 0;
+
+			    display: none;
+
+			    width: 100%;
+
+			    height: 100%;
+
+			    background: rgba(0, 0, 0, 0.65);
+
+			    z-index: 999;
+
+			    overflow: auto;
+
+			}
+
+			#BackDiv {
+
+				top: 0; bottom: 0; left: 0; right: 0;
+
+				position: fixed;
+
+				overflow: hidden;
+
+			}
+
+			.popup {
+
+			    top: 10%;
+
+			    left: 0;
+
+			    right: 0;       
+
+			    font-size: 14px;
+
+			    margin: auto;
+
+			    width: 85%;
+
+			    min-width: 320px;
+
+			    max-width: 600px;
+
+			    position: absolute;
+
+			    padding: 15px 20px;
+
+			    border: 1px solid #383838;
+
+                background: var(--over-color);
+
+                color: var(--text-color);
+
+			    z-index: 1000;
+
+			    -webkit-border-radius: 14px;
+
+			    -moz-border-radius: 14px;
+
+			    -ms-border-radius: 14px;
+
+			    border-radius: 14px;
+
+			    font: 'Product Sans';
+
+			    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+
+			    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+
+			    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+
+			    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+
+			}
+
+            input[type=button] {
+
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+				-moz-tap-highlight-color: rgba(0,0,0,0);
+
+				padding: 12px 20px; 
+
+				background: rgb(115, 15, 124);
+
+				color: #fff;
+
+				border: 0 none;
+
+				cursor: pointer;
+
+				border-radius: 8px; 
+
+				-webkit-border-radius: 8px;
+
+				-moz-border-radius: 8px;
+
+				-khtml-border-radius: 8px;
+
+				margin-top: 5px;
+
+				margin-left: 5px;
+
+				margin-bottom: 2px;
+
+			}
+
+			
+
+			input[type=button]:hover {
+
+				background: rgb(85, 12, 92);
+
+			}
+
+			input[type=button]:active, input[type=button]:focus {
+
+                outline: none;
+
+			}
+
+			input[type=button]::-moz-focus-inner {
+
+  				border: 0;
+
+			}
+
+			input[type=button]::-webkit-focus-inner {
+
+				border: 0;
+
+			}
+
+            .btn {
+
+				-webkit-transition: 0.2s;
+
+				-o-transition: 0.2s;
+
+				-moz-transition: 0.2s;
+
+				transition: 0.2s;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body class="center">
+
+      <style>.preloader {
+
+  /*фиксированное позиционирование*/
+
+  position: fixed;
+
+  /* координаты положения */
+
+  left: 0;
+
+  top: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  /* фоновый цвет элемента */
+
+  background: #e0e0e0;
+
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+
+  z-index: 1001;
+
+}
+
+.preloader__row {
+
+  position: relative;
+
+  top: 50%;
+
+  left: 50%;
+
+  width: 70px;
+
+  height: 70px;
+
+  margin-top: -35px;
+
+  margin-left: -35px;
+
+  text-align: center;
+
+  animation: preloader-rotate 2s infinite linear;
+
+}
+
+.preloader__item {
+
+  position: absolute;
+
+  display: inline-block;
+
+  top: 0;
+
+  background-color: #337ab7;
+
+  border-radius: 100%;
+
+  width: 35px;
+
+  height: 35px;
+
+  animation: preloader-bounce 2s infinite ease-in-out;
+
+}
+
+.preloader__item:last-child {
+
+  top: auto;
+
+  bottom: 0;
+
+  animation-delay: -1s;
+
+}
+
+@keyframes preloader-rotate {
+
+  100% {
+
+    transform: rotate(360deg);
+
+  }
+
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+
+  100% {
+
+    transform: scale(0);
+
+  }
+
+  50% {
+
+    transform: scale(1);
+
+  }
+
+}
+
+.loaded_hiding .preloader {
+
+  transition: 0.3s opacity;
+
+  opacity: 0;
+
+}
+
+.loaded .preloader {
+
+  display: none;
+
+}</style>
+
+<script>
+
+  window.onload = function () {
+
+    document.body.classList.add('loaded_hiding');
+
+    window.setTimeout(function () {
+
+      document.body.classList.add('loaded');
+
+      document.body.classList.remove('loaded_hiding');
+
+    }, 500);
+
+  }
+
+</script>
+
+      <div class="preloader">
+
+  <div class="preloader__row">
+
+    <div class="preloader__item"></div>
+
+    <div class="preloader__item"></div>
+
+  </div>
+
+</div>
+
+        <header class="center info">
+
+            <div class="center p">
+
+                <h2>Donate</h2>
+
+				<hr width="295">
+
+				
+
+            </div>
+
+	          <div class="buttons">
+
+                <a href="javascript:/" onclick="location.href='https://qiwi.com/n/KIRILLSAINT'">QIWI</a>
+
+            </div>
+
+            <div class="buttons">
+
+                <a href="javascript:/" onclick="location.href='https://sobe.ru/na/kirillsaint'">ЮMoney</a>
+
+            </div>
+
+            <div class="buttons">
+
+                <a href="javascript:/" onclick="location.href='https://www.donationalerts.com/r/kirillsaint'">Donations Alerts</a>
+
+            </div>
+
+        </header>
+
+	</body>
+
+</html>
