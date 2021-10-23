@@ -1,0 +1,298 @@
+<pre>
+	&ltform class="p-5 border rounded-3 bg-light" id="releaseForm" action="/api/user/release/new" method="post"&gt
+      &ltinput type='hidden' name='_csrf' value='98Epo106-vx5nwCHFwbjXIVp_lza-ffwzH-4'&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltselect class="form-select" aria-label="Release type" name="type" id="floatingType" required&gt
+          &ltoption value="audio" selected&gtАудио&lt/option&gt
+          &ltoption value="video"&gtВидео&lt/option&gt
+        &lt/select&gt
+        &ltlabel for="floatingType"&gt* Тип релиза&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="link" class="form-control"  id="floatingLink" placeholder="Link to a cover in the cloud" required&gt
+        &ltlabel for="floatingLink"&gt* Ссылка на обложку в облаке&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="name" class="form-control" id="flotingName" placeholder="Название" required&gt
+        &ltlabel for="flotingName"&gt* Название&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="main_artist" class="form-control" id="floatingMainArtist" placeholder="Main artist" required&gt
+        &ltlabel for="floatingMainArtist"&gt* Главный артист&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="another_artists" class="form-control" id="floatingAnotherArtists" placeholder="Additional artists" data-bs-toggle="tooltip" data-bs-placement="right" title="If the release is without add. artists, then leave this field blank."&gt
+        &ltlabel for="floatingAnotherArtists"&gtДополнительные артисты&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="version" class="form-control" id="floatingVersion" placeholder="Version" data-bs-toggle="tooltip" data-bs-placement="right" title="If the release is without version, then leave this field blank"&gt
+        &ltlabel for="floatingVersion"&gtВерсия&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltselect class="form-select" aria-label="Genre" name="genre" id="floatingGenre" required&gt
+          &ltoption value="hip-hop" selected&gtHip-Hop/Rap&lt/option&gt
+          &ltoption value="pop"&gtPop&lt/option&gt
+          &ltoption value="rock"&gtRock&lt/option&gt
+          &ltoption value="rock"&gtAlternative&lt/option&gt
+          &ltoption value="rock"&gtRap&lt/option&gt
+        &lt/select&gt
+        &ltlabel for="floatingGenre"&gt* Жанр&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltselect class="form-select" aria-label="* Ненормативная лексика" name="explicit" id="floatingExplicit" required&gt
+          &ltoption value="0" selected&gtНет&lt/option&gt
+          &ltoption value="1"&gtДа&lt/option&gt
+        &lt/select&gt
+        &ltlabel for="floatingExplicit"&gt* Ненормативная лексика&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="author" class="form-control" id="floatingAuthor" placeholder="* Автор (ФИО)" required&gt
+        &ltlabel for="floatingAuthor"&gt* Автор (ФИО)&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="date" name="date" class="form-control"  id="floatingDate" placeholder="* Release date" required&gt
+        &ltlabel for="floatingDate"&gt* Дата релиза&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="label" class="form-control"  id="floatingLabel" placeholder="* Label" data-bs-toggle="tooltip" data-bs-placement="right" title="The name of the label from which the material will be uploaded" required&gt
+        &ltlabel for="floatingLabel"&gt* Лейбл&lt/label&gt
+      &lt/div&gt
+      &lthr&gt
+      &lth2&gtПродвижение&lt/h2&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="social" class="form-control"  id="floatingSocial" placeholder="Artist's social media" data-bs-toggle="tooltip" data-bs-placement="right" title="List all social networks of the artist separated by commas"&gt
+        &ltlabel for="floatingSocial"&gtСоциальные сети артиста&lt/label&gt
+      &lt/div&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="promo" class="form-control"  id="floatingPromo" placeholder="Description" data-bs-toggle="tooltip" data-bs-placement="right" title="Description in Russian or English"&gt
+        &ltlabel for="floatingPromo"&gtОписание релиза&lt/label&gt
+      &lt/div&gt
+      &lthr&gt
+      &lth2&gtАвторские права&lt/h2&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltinput type="text" name="ap" class="form-control"  id="floatingAp" placeholder="Artist's social media" data-bs-toggle="tooltip" data-bs-placement="right" title="List all social networks of the artist separated by commas"&gt
+        &ltlabel for="floatingAp"&gtДоказательства авторских прав&lt/label&gt
+      &lt/div&gt
+      &lthr/&gt
+      &lth2&gtТреки&lt/h2&gt&ltbr&gt
+      &ltdiv class="form-floating mb-3"&gt
+        &ltbutton class="w-100 btn btn-lg btn-outline-primary" type="button" onclick="newTrack()"&gtДобавить трек&lt/button&gt
+      &lt/div&gt
+      &ltdiv id="tracks"&gt
+      &lt/div&gt
+      &lthr/&gt
+      &lthr&gt
+      &ltbutton class="w-100 btn btn-lg btn-outline-success" id="submitButton" type="button"&gtСоздать релиз&lt/button&gt
+&ltscript&gt
+  const tracks = [];
+  let count = 0;
+  const serializeArray = function (form) {
+    var arr = [];
+    Array.prototype.slice.call(form.elements).forEach(function (field) {
+      if (!field.name || field.disabled || ['file', 'reset', 'submit', 'button'].indexOf(field.type) &gt -1) return;
+      if (field.type === 'select-multiple') {
+        Array.prototype.slice.call(field.options).forEach(function (option) {
+          if (!option.selected) return;
+          arr.push({
+            name: field.name,
+            value: option.value,
+            id: option.id
+          });
+        });
+        return;
+      }
+      if (['checkbox', 'radio'].indexOf(field.type) &gt-1 && !field.checked) return;
+      arr.push({
+        name: field.name,
+        value: field.value,
+        id: field.id,
+        trackId: field.placeholder
+      });
+    });
+    return arr;
+  };
+  function serialize (data) {
+    let obj = {};
+    for (let [key, value] of data) {
+      if (obj[key] !== undefined) {
+        if (!Array.isArray(obj[key])) {
+          obj[key] = [obj[key]];
+        }
+        obj[key].push(value);
+      } else {
+        obj[key] = value;
+      }
+    }
+    return obj;
+  }
+
+  function newTrack() {
+    count += 1;
+    const items = [
+      {
+        type: 'input',
+        attr_type: 'text',
+        name: 'track_name',
+        className: 'form-control',
+        placeholder: '* Title'
+      },
+      {
+        type: 'input',
+        attr_type: 'text',
+        name: 'track_version',
+        className: 'form-control',
+        placeholder: 'Version'
+      },
+      {
+        type: 'input',
+        attr_type: 'text',
+        name: 'track_artist',
+        className: 'form-control',
+        placeholder: '* Main artist'
+      },
+      {
+        type: 'input',
+        attr_type: 'text',
+        name: 'track_additional_artists',
+        className: 'form-control',
+        placeholder: 'Additional artists'
+      },
+      {
+        type: 'input',
+        attr_type: 'text',
+        name: 'track_link',
+        className: 'form-control',
+        placeholder: '* Link to wav-file'
+      },
+      {
+        type: 'select',
+        attr_type: '',
+        name: 'track_explicit',
+        className: 'form-select',
+        placeholder: '* Explicit',
+        options: [
+          {
+            value: 0,
+            text: 'No',
+            selected: true
+          },
+          {
+            value: 1,
+            text: 'Yes',
+            selected: false
+          }
+        ]
+      },
+      {
+        type: 'input',
+        attr_type: 'text',
+        name: 'track_author',
+        className: 'form-control',
+        placeholder: '* Author (full name)'
+      },
+      {
+        type: 'input',
+        attr_type: 'text',
+        name: 'track_producer',
+        className: 'form-control',
+        placeholder: 'Producer'
+      },
+    ]
+    let container = document.getElementById('tracks');
+
+    let trackDiv = document.createElement('div');
+    trackDiv.className = "track"
+    trackDiv.id = count
+
+    for (let [index, item] of items.entries()) {
+      let divInput = document.createElement('div');
+      divInput.className = "form-floating mb-3"
+      divInput.id = count
+
+
+      let inputName = document.createElement(item.type);
+      inputName.type = item.attr_type;
+      inputName.name = item.name;
+      inputName.className = item.className;
+      inputName.placeholder = count
+      inputName.id = 'track'
+
+      divInput.appendChild(inputName);
+
+      if (item.type === 'select') {
+        item.options.forEach(i =&gt {
+          let optionName = document.createElement('option');
+          optionName.value = i.value
+          optionName.textContent = i.text
+          if (i.selected) {
+            optionName.selected = true
+          }
+          inputName.appendChild(optionName);
+        })
+      }
+
+      let labelName = document.createElement('label');
+      labelName.textContent = item.placeholder
+      divInput.appendChild(labelName);
+
+      trackDiv.appendChild(divInput);
+      if (items.length - 1 === index) {
+        trackDiv.appendChild(document.createElement('hr'));
+      }
+    }
+
+    container.appendChild(trackDiv)
+  }
+
+  submitButton.onclick = async (e) =&gt {
+    let div = document.getElementById('tracks');
+    let divs = div.getElementsByClassName('track');
+    if (tracks.length) {
+      return;
+    }
+      for (const i of divs) {
+        let obj = {};
+        const inputs = document.getElementById(i.id).getElementsByTagName('input');
+        const selects = document.getElementById(i.id).getElementsByTagName('select');
+        obj['id'] = i.id
+        for (const inp of inputs) {
+          obj[inp.name] = inp.value
+        }
+        for (const sel of selects) {
+          obj[sel.name] = sel.value
+        }
+        if (Object.keys(obj).length !== 0) {
+          tracks.push(obj)
+        }
+      }
+    if (!tracks.length) {
+      return alert('Необходимо добавить хоть 1 трек.')
+    }
+    console.log(tracks)
+
+    let form = document.querySelector('#releaseForm');
+    let data = new FormData(form);
+    data.append('tracks', JSON.stringify(tracks))
+    const formData = new URLSearchParams(data);
+
+    const response = await fetch('/api/user/release/new', {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      // mode: 'cors', // no-cors, *cors, same-origin
+      // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'include', // include, *same-origin, omit
+      headers: {
+        // 'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      redirect: 'follow', // manual, *follow, error
+      // referrerPolicy: 'no-referrer', // no-referrer, *client
+      body: formData // body data type must match "Content-Type" header
+    }).then(response =&gt {
+      if (response.redirected) {
+        window.location.href = response.url;
+      }
+    })
+  }
+&lt/script&gt
+
+</pre>
