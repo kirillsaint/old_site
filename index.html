@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <script type="text/javascript" src="/js/main.js"></script>
     <script type="text/javascript" src="/js/ava.js"></script>
+    <script type="text/javascript" src="/js/cf.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/6bb43a5107.js" crossorigin="anonymous"></script>
@@ -35,8 +36,8 @@
     </div>
     <div class="main text-center">
       <img src="" alt="ava" id="ava" class="ava">
-      <h1>kirillsaint</h1>
-      <p>программист, верно же?</p>
+      <h1 class="name">kirillsaint</h1>
+      <p class="desc">программист, верно же?</p>
       <div class="socials">
         <a href="https://t.me/kirillsaint"><i class="bi bi-telegram social"></i></a>
         <a href="https://github.com/kirillsaint"><i class="bi bi-github social"></i></a>
@@ -48,5 +49,37 @@
         <a href="https://t.me/kirillsaint_blog">телеграм канал</a>
       </div>
     </div>
+    <script>
+      ScrollReveal().reveal('.ava', {
+          delay: 150,
+          duration: 1500,
+          origin: 'top',
+          distance: '50px'
+      });
+      ScrollReveal().reveal('.name', {
+          delay: 150,
+          duration: 1500,
+          origin: 'top',
+          distance: '50px'
+      });
+      ScrollReveal().reveal('.desc', {
+          delay: 250,
+          duration: 1700,
+          origin: 'top',
+          distance: '50px'
+      });
+      ScrollReveal().reveal('.socials', {
+          delay: 300,
+          duration: 1800,
+          origin: 'top',
+          distance: '50px'
+      });
+      ScrollReveal().reveal('.buttons', {
+          delay: 50,
+          duration: 1900,
+          origin: 'top',
+          distance: '50px'
+      });
+    </script>
   </body>
 </html>
