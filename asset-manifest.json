@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.3faf49cc.css",
-    "main.js": "/static/js/main.0bac92bb.js",
+    "main.js": "/static/js/main.bcd8f4ef.js",
     "static/media/stolzl_medium.otf": "/static/media/stolzl_medium.37a1ad5e0454ca26a278.otf",
     "index.html": "/index.html",
     "main.3faf49cc.css.map": "/static/css/main.3faf49cc.css.map",
-    "main.0bac92bb.js.map": "/static/js/main.0bac92bb.js.map"
+    "main.bcd8f4ef.js.map": "/static/js/main.bcd8f4ef.js.map"
   },
   "entrypoints": [
     "static/css/main.3faf49cc.css",
-    "static/js/main.0bac92bb.js"
+    "static/js/main.bcd8f4ef.js"
   ]
 }
